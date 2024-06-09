@@ -1,21 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Myloginpage, { Loginpage, Myloginpage1 } from './modules/auth/Myloginpage';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./style.css";
-import Myreactbootstrap from './modules/auth/Myreactbootstrap';
-import Muidesign from './modules/auth/Muidesign';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Mylogin from './modules/auth/Mylogin';
+import Myregistor from './modules/auth/Myregistor';
+import Mylandingpage from './modules/dashboard/Mylandingpage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Mylogin/>}/>
+        <Route path="registor" element={<Myregistor/>}/>
+        <Route path='dashboard' element={<Mylandingpage/>}/>
+      </Routes>
+    </BrowserRouter>
 
-    <Myloginpage></Myloginpage>
-    <Myloginpage1></Myloginpage1>
-    <Loginpage></Loginpage>
-    <Myreactbootstrap></Myreactbootstrap>
-    <Muidesign></Muidesign>
   
   </React.StrictMode>
 );
