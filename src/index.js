@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Mylogin from './modules/auth/Mylogin';
 import Myregistor from './modules/auth/Myregistor';
 import Mylandingpage from './modules/dashboard/Mylandingpage';
+import Myforms from './modules/dashboard/Myforms';
+import Myhomepage from './modules/dashboard/Myhomepage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +18,11 @@ root.render(
       <Routes>
         <Route path='' element={<Mylogin/>}/>
         <Route path="registor" element={<Myregistor/>}/>
-        <Route path='dashboard' element={<Mylandingpage/>}/>
+        <Route path='dashboard' element={<Mylandingpage/>}>
+            <Route path='' element={<Myhomepage/>}/>
+            <Route path="myform" element={<Myforms/>}/>
+        </Route>
+       
       </Routes>
     </BrowserRouter>
 

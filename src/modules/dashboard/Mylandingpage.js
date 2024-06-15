@@ -15,7 +15,7 @@ function Mylandingpage() {
                <Mysidebar/>
             </div>
             <div className='col-md-10 border'>
-               <Myhomepage/>
+               <Outlet></Outlet>
             </div>
             <div className='col-12'>
                 <Myfooter/>
