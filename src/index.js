@@ -9,6 +9,8 @@ import Myregistor from './modules/auth/Myregistor';
 import Mylandingpage from './modules/dashboard/Mylandingpage';
 import Myforms from './modules/dashboard/Myforms';
 import Myhomepage from './modules/dashboard/Myhomepage';
+import Mygraph from './modules/dashboard/Mygraph';
+import Myaxiospage from './modules/dashboard/Myaxiospage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +23,8 @@ root.render(
         <Route path='dashboard' element={<Mylandingpage/>}>
             <Route path='' element={<Myhomepage/>}/>
             <Route path="myform" element={<Myforms/>}/>
+            <Route path="mychart" element={<Mygraph/>}/>
+            <Route path="myaxios" element={<Myaxiospage/>}/>
         </Route>
        
       </Routes>

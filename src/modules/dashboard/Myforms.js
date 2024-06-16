@@ -28,7 +28,6 @@ const [gm, sm]=useState();
 
     }
 
-
     return (
         <div className='container'>
             <div className='row'>

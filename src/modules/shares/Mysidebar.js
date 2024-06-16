@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Mysidebar() {
   return (
@@ -13,9 +14,9 @@ function Mysidebar() {
         </button>
         <div className="collapse" id="home-collapse">
           <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
-            <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
-            <li><a href="#" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
+            <li><Link to="mychart" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Charts</Link></li>
+            <li><Link to="myaxios" className="link-body-emphasis d-inline-flex text-decoration-none rounded">axios</Link></li>
+            <li><Link to="myfetch" className="link-body-emphasis d-inline-flex text-decoration-none rounded">fetch</Link></li>
           </ul>
         </div>
       </li>
