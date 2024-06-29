@@ -39,7 +39,7 @@ function Myaxiospage() {
                     <td>{d.title}</td>
                     <td>{d.body}</td>
                     <td align='right'>
-                        <Link to="#" className="btn btn-primary btn-sm">view</Link>
+                        <Link to={`view/`+d.id} className="btn btn-primary btn-sm">view</Link>
                         <Link to="#" className="btn btn-warning btn-sm ms-2">edit</Link>
                         <Link to="#" className="btn btn-danger btn-sm ms-2" >del</Link>
                     </td>

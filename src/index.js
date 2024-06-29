@@ -11,6 +11,9 @@ import Myforms from './modules/dashboard/Myforms';
 import Myhomepage from './modules/dashboard/Myhomepage';
 import Mygraph from './modules/dashboard/Mygraph';
 import Myaxiospage from './modules/dashboard/Myaxiospage';
+import Myfetchpage from './modules/dashboard/Myfetchpage';
+import Detailspage from './modules/dashboard/Detailspage';
+import Myparentpage from './modules/dashboard/Myparentpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +28,9 @@ root.render(
             <Route path="myform" element={<Myforms/>}/>
             <Route path="mychart" element={<Mygraph/>}/>
             <Route path="myaxios" element={<Myaxiospage/>}/>
+            <Route path='myfetch' element={<Myfetchpage/>}/>
+            <Route path='myaxios/view/:id' element={<Detailspage/>}/>
+            <Route path='myprops' element={<Myparentpage/>}/>
         </Route>
        
       </Routes>
