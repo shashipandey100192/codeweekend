@@ -59,3 +59,16 @@
   {
     margin-top: 70px !important;
   }
+  .loading
+  {
+    background-color: red;
+    padding: 50px;
+    text-align: center;
+    color:white;
+  }
+  .error
+  {
+    font-size: 150px;
+    text-align: center;
+    color:red;
+  }

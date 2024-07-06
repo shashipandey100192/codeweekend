@@ -18,6 +18,8 @@ function Mysidebar() {
             <li><Link to="myaxios" className="link-body-emphasis d-inline-flex text-decoration-none rounded">axios</Link></li>
             <li><Link to="myfetch" className="link-body-emphasis d-inline-flex text-decoration-none rounded">fetch</Link></li>
             <li><Link to="myprops" className="link-body-emphasis d-inline-flex text-decoration-none rounded">props</Link></li>
+            <li><Link to="lazyloading" className="link-body-emphasis d-inline-flex text-decoration-none rounded">lazyloading</Link></li>
+            <li><Link to="myclass" className="link-body-emphasis d-inline-flex text-decoration-none rounded">classcomponent</Link></li>
           </ul>
         </div>
       </li>
