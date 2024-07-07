@@ -20,6 +20,7 @@ function Mysidebar() {
             <li><Link to="myprops" className="link-body-emphasis d-inline-flex text-decoration-none rounded">props</Link></li>
             <li><Link to="lazyloading" className="link-body-emphasis d-inline-flex text-decoration-none rounded">lazyloading</Link></li>
             <li><Link to="myclass" className="link-body-emphasis d-inline-flex text-decoration-none rounded">classcomponent</Link></li>
+            <li><Link to="myredux" className="link-body-emphasis d-inline-flex text-decoration-none rounded">redux</Link></li>
           </ul>
         </div>
       </li>
